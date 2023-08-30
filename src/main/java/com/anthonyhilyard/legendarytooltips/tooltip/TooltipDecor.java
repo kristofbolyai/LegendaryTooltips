@@ -149,7 +149,7 @@ public class TooltipDecor
 				}
 
 				// Calculate the offset, which is the height of all components before the title plus the height of all title lines.
-				for (int i = 0; i < titleStart + titleLines && i < components.size(); i++)
+				for (int i = 0; i <= titleStart + titleLines && i < components.size(); i++)
 				{
 					ClientTooltipComponent component = components.get(i);
 					if (component instanceof ClientTextTooltip)
